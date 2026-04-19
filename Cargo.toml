@@ -1,0 +1,23 @@
+[package]
+name = "wrapped_interval"
+version = "0.1.0"
+edition = "2021"
+description = "Wrapped interval abstract domain for static analysis of eBPF programs"
+authors = ["Anza Maintainers <maintainers@anza.xyz>"]
+repository = "https://github.com/OpenSourceVerif/WrappedInterval-for-Rust"
+license = "Apache-2.0"
+rust-version = "1.56"
+keywords = ["ebpf", "abstract-domain", "wrapped-interval", "solana"]
+categories = ["mathematics", "no-std"]
+
+[features]
+default = []
+std = []
+
+[dependencies]
+
+[dev-dependencies]
+
+[profile.release]
+lto = true
+codegen-units = 1
