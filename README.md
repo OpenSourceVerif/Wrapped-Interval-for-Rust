@@ -2,9 +2,13 @@
 
 A `no_std`-compatible **Wrapped Interval** abstract domain implementation in pure Rust, designed for static analysis of eBPF programs (Solana SBF).
 
+## Reference
+- "Interval Analysis and Machine Arithmetic: Why Signedness Ignorance Is Bliss". TOPLAS2015. https://dl.acm.org/doi/10.1145/2651360
+- "Program Analysis Combining Generalized Bit-Level and Word-Level Abstractions". ISSTA2025. https://dl.acm.org/doi/10.1145/3728905
+
 ## Overview
 
-Wrapped intervals extend traditional interval arithmetic to handle modular (wrapping) semantics common in fixed-width integer operations. Based on the paper "A Wrapped Interval Arithmetic" by Jorge A. Navas et al., this domain represents ranges `[lb, ub]` where the interval may wrap around the modulus boundary, enabling precise tracking of bit-width-aware value ranges.
+Wrapped intervals extend traditional interval arithmetic to handle modular (wrapping) semantics common in fixed-width integer operations. This domain represents ranges `[lb, ub]` where the interval may wrap around the modulus boundary, enabling precise tracking of bit-width-aware value ranges.
 
 ## Features
 
